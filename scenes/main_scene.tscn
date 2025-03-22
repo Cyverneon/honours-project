@@ -53,6 +53,8 @@ visible = false
 use_collision = true
 
 [node name="Character" parent="." instance=ExtResource("4_ltxe0")]
+base_speed = 3.5
+sprint_speed = 5.0
 controls = {
 "BACKWARD": "backwards",
 "CROUCH": "crouch",
@@ -63,6 +65,9 @@ controls = {
 "RIGHT": "right",
 "SPRINT": "sprint"
 }
+in_air_momentum = false
+continuous_jumping = false
+pausing_enabled = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bjne5")
