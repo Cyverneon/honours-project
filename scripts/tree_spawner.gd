@@ -13,6 +13,7 @@ func create_tree(pos : Vector3):
 	tree.material_trunk = load("res://materials/bark_material.tres")
 	tree.twig_enable = false # TEMP FOR DEBUGGING
 	tree.position = pos
+	tree.trunk_uv_multiplier = 1
 	
 	# randomized parameters
 	tree.trunk_branches_count = randi_range(params.branches_count_min, params.branches_count_max)
