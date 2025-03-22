@@ -48,17 +48,18 @@ func create_tree(pos : Vector3, params : param_ranges):
 	static_body.add_child(collision_shape)
 	tree.add_child(static_body)
 
-	return tree
+	add_child(tree)
 
 func spawn_trees():
-	var i : int = 0
 	for child in get_children():
 		if child is Node3D:
-			if ((group == 1) or (i%2 == 0)):
-				add_child(create_tree(child.position, params_normal))
-			else:
-				add_child(create_tree(child.position, params_extreme))
-			i += 1
+			if group == 1:
+				create_tree(child.position, params_normal)
+			elif group == 2:
+				if (randf() < 0.33):
+					create_tree(child.position, params_extreme)
+				else:
+					create_tree(child.position, params_normal)
 
 func _ready():
 	spawn_trees()
