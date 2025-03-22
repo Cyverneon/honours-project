@@ -63,3 +63,11 @@ extends Resource
 # length of trunk before branches start
 @export var length_min : float = 1
 @export var length_max : float = 2.4
+
+# min and max amount the bark colour can be tinted to a random colour
+@export var bark_color_min : float = 0.0
+@export var bark_color_max : float = 0.2
+
+# min and max amount the twig colour can be tinted to a random colour
+@export var twig_color_min : float = 0.0
+@export var twig_color_max : float = 0.3

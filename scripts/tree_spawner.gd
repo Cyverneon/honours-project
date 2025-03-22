@@ -1,6 +1,6 @@
 extends Node
 
-var group : int = 1
+var group : int = 2
 
 const param_ranges = preload("param_ranges.gd")
 var params : param_ranges
@@ -10,11 +10,15 @@ func create_tree(pos : Vector3):
 	
 	# fixed parameters
 	tree.trunk_segments = 6
-	tree.material_trunk = load("res://materials/bark_material.tres")
-	tree.material_twig = load("res://materials/leaf_material.tres")
 	#tree.twig_enable = false # TEMP FOR DEBUGGING
 	tree.position = pos
 	tree.trunk_uv_multiplier = 1
+	
+	#materials
+	tree.material_trunk = load("res://materials/bark_material.tres").duplicate()
+	tree.material_trunk.albedo_color = Color.WHITE.lerp(Color(randf(), randf(), randf()), randf_range(params.bark_color_min, params.bark_color_max))
+	tree.material_twig = load("res://materials/leaf_material.tres").duplicate()
+	tree.material_twig.albedo_color = Color.WHITE.lerp(Color(randf(), randf(), randf()), randf_range(params.twig_color_min, params.twig_color_max))
 	
 	# randomized parameters
 	tree.trunk_branches_count = randi_range(params.branches_count_min, params.branches_count_max)

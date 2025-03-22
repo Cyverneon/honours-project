@@ -36,3 +36,7 @@ twist_min = -5.0
 twist_max = 5.0
 length_min = 0.1
 length_max = 4.0
+bark_color_min = 0.2
+bark_color_max = 0.6
+twig_color_min = 0.2
+twig_color_max = 1.0

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd6vka45f7tbu"]
+[gd_scene load_steps=4 format=3 uid="uid://dd6vka45f7tbu"]
 
 [ext_resource type="Script" path="res://scripts/tree_spawner.gd" id="1_ddrfl"]
 [ext_resource type="Material" uid="uid://bneqtfy7b1te2" path="res://materials/bark_material.tres" id="2_g16gs"]
+[ext_resource type="Material" uid="uid://bk083ohtfum5i" path="res://materials/leaf_material.tres" id="3_r8bxy"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -25,8 +26,7 @@ light_color = Color(1, 0.8375, 0.61, 1)
 
 [node name="Tree3D" type="Tree3D" parent="."]
 seed = 22
-trunk_length = 4.978
-trunk_uv_multiplier = 1.0
-twig_enable = false
+twig_scale = 0.2
 material_trunk = ExtResource("2_g16gs")
+material_twig = ExtResource("3_r8bxy")
 visible = false
