@@ -56,7 +56,7 @@ func spawn_trees():
 			if group == 1:
 				create_tree(child.position, params_normal)
 			elif group == 2:
-				if (randf() < 0.33):
+				if (randf() < 0.5):
 					create_tree(child.position, params_extreme)
 				else:
 					create_tree(child.position, params_normal)
