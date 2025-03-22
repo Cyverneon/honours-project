@@ -8,8 +8,8 @@
 [resource]
 cull_mode = 1
 albedo_texture = ExtResource("1_ineoy")
+metallic_specular = 0.15
 roughness_texture = ExtResource("4_fk704")
-roughness_texture_channel = 4
 normal_enabled = true
 normal_texture = ExtResource("3_pr236")
 ao_enabled = true

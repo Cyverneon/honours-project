@@ -3,9 +3,10 @@ extends Node
 var group : int = 2
 
 const param_ranges = preload("param_ranges.gd")
-var params : param_ranges
+var params_normal : param_ranges = load("res://resources/param_ranges_group1.tres")
+var params_extreme : param_ranges = load("res://resources/param_ranges_group2.tres")
 
-func create_tree(pos : Vector3):
+func create_tree(pos : Vector3, params : param_ranges):
 	var tree = Tree3D.new()
 	
 	# fixed parameters
@@ -50,14 +51,14 @@ func create_tree(pos : Vector3):
 	return tree
 
 func spawn_trees():
+	var i : int = 0
 	for child in get_children():
 		if child is Node3D:
-			add_child(create_tree(child.position))
+			if ((group == 1) or (i%2 == 0)):
+				add_child(create_tree(child.position, params_normal))
+			else:
+				add_child(create_tree(child.position, params_extreme))
+			i += 1
 
 func _ready():
-	if group == 1:
-		params = load("res://resources/param_ranges_group1.tres")
-	else:
-		params = load("res://resources/param_ranges_group2.tres")
-		
 	spawn_trees()
