@@ -9,7 +9,7 @@ func create_tree(pos : Vector3):
 	var tree = Tree3D.new()
 	
 	# fixed parameters
-	tree.trunk_segments = 8
+	tree.trunk_segments = 6
 	tree.material_trunk = load("res://materials/bark_material.tres")
 	tree.twig_enable = false # TEMP FOR DEBUGGING
 	tree.position = pos

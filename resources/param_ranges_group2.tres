@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_k2rc7")
 branches_count_min = 1
-branches_count_max = 8
+branches_count_max = 6
 height_min = 1
 height_max = 7
 branch_length_min = 0.1
@@ -22,8 +22,8 @@ drop_amount_min = -0.6
 drop_amount_max = 0.3
 grow_amount_min = -1.0
 grow_amount_max = 1.0
-sweep_amount_min = -0.4
-sweep_amount_max = 0.4
+sweep_amount_min = -0.05
+sweep_amount_max = 0.05
 max_radius_min = 0.07
 max_radius_max = 0.26
 radius_falloff_rate_min = 0.6
