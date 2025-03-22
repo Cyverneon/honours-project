@@ -31,26 +31,913 @@ data = PackedVector3Array(-62.5025, -0.0426, 68.7495, -68.7526, -0.1257, 68.7495
 [node name="TreeSpawner" type="Node" parent="."]
 script = ExtResource("1_ddrfl")
 
-[node name="Node3D2" type="Node3D" parent="TreeSpawner"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.0676767, 0)
+[node name="Marker3D2" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.4544, -1.02384, -45.9851)
+gizmo_extents = 0.57
 
-[node name="Node3D3" type="Node3D" parent="TreeSpawner"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+[node name="Marker3D3" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.9308, -0.317217, -42.2396)
+gizmo_extents = 0.57
 
-[node name="Node3D4" type="Node3D" parent="TreeSpawner"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102078, 0.36819, 10.4929)
+[node name="Marker3D4" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.3513, -0.732683, -24.4133)
+gizmo_extents = 0.57
 
-[node name="Node3D5" type="Node3D" parent="TreeSpawner"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102078, 0.584682, -10.2025)
+[node name="Marker3D5" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6859, -0.736137, -45.1322)
+gizmo_extents = 0.57
+
+[node name="Marker3D6" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.2858, -0.696645, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D7" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.0946, -0.111588, -43.1479)
+gizmo_extents = 0.57
+
+[node name="Marker3D8" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.846, 0.240145, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D9" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.2856, -0.142818, -36.1215)
+gizmo_extents = 0.57
+
+[node name="Marker3D10" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.7105, 0.309385, -37.7947)
+gizmo_extents = 0.57
+
+[node name="Marker3D11" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.6099, -0.469254, -31.6267)
+gizmo_extents = 0.57
+
+[node name="Marker3D12" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.6877, 0.0365463, -41.5718)
+gizmo_extents = 0.57
+
+[node name="Marker3D13" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.7218, 0.972308, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D14" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9354, 1.05306, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D15" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9354, 1.55498, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D16" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6028, 0.803597, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D17" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7495, -0.425275, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D18" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, -0.884149, -42.99)
+gizmo_extents = 0.57
+
+[node name="Marker3D19" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, -0.842099, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D20" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6305, -0.346377, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D21" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.60819, -1.11215, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D22" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966957, -0.770878, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D23" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966957, 0.247848, -36.7989)
+gizmo_extents = 0.57
+
+[node name="Marker3D24" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.70042, -0.752539, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D25" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.4296, 0.256771, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D26" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6431, -0.12557, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D27" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.844, 1.23116, -25.0326)
+gizmo_extents = 0.57
+
+[node name="Marker3D28" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.67, 0.638281, -32.9052)
+gizmo_extents = 0.57
+
+[node name="Marker3D29" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.85537, 0.586448, -30.2506)
+gizmo_extents = 0.57
+
+[node name="Marker3D30" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931072, 0.522706, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D31" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931072, 1.18959, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D32" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7363, 0.861121, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D33" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04988, -0.605071, -45.4713)
+gizmo_extents = 0.57
+
+[node name="Marker3D34" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7636, 0.861861, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D35" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7636, 0.877888, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D36" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09626, 0.456384, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D37" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9072, 0.0859767, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D38" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7664, 0.139032, -45.4713)
+gizmo_extents = 0.57
+
+[node name="Marker3D39" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6937, -0.0676908, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D40" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0263, 0.704162, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D41" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09626, 0.94754, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D42" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8827, 1.18373, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D43" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.95538, 1.8455, -26.5408)
+gizmo_extents = 0.57
+
+[node name="Marker3D44" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.21532, 1.64075, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D45" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8714, 1.05582, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D46" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0131, -0.415382, -39.0407)
+gizmo_extents = 0.57
+
+[node name="Marker3D47" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6578, 0.638812, -31.6354)
+gizmo_extents = 0.57
+
+[node name="Marker3D48" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9904, 1.18803, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D49" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7039, -1.6423, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D50" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.4904, -0.876137, -47.0444)
+gizmo_extents = 0.57
+
+[node name="Marker3D51" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.8457, 0.413765, -45.589)
+gizmo_extents = 0.57
+
+[node name="Marker3D52" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.823, -0.836228, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D56" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.1647, 0.0720645, -40.8533)
+gizmo_extents = 0.57
+
+[node name="Marker3D57" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.1783, -0.666577, -39.0407)
+gizmo_extents = 0.57
+
+[node name="Marker3D58" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6094, 0.173686, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D59" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6094, 1.32302, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D60" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9421, 0.826031, -28.1139)
+gizmo_extents = 0.57
+
+[node name="Marker3D61" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.158, 0.831416, -34.305)
+gizmo_extents = 0.57
+
+[node name="Marker3D64" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.2629, 1.01692, -30.841)
+gizmo_extents = 0.57
+
+[node name="Marker3D54" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.1047, -1.18605, -21.6136)
+gizmo_extents = 0.57
+
+[node name="Marker3D55" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.7935, -0.951084, -16.1493)
+gizmo_extents = 0.57
+
+[node name="Marker3D62" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.7935, -0.480744, -9.95812)
+gizmo_extents = 0.57
+
+[node name="Marker3D63" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1395, -0.693286, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D65" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6859, -0.101268, -21.6136)
+gizmo_extents = 0.57
+
+[node name="Marker3D66" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.5504, -0.315285, -14.2624)
+gizmo_extents = 0.57
+
+[node name="Marker3D67" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.8995, -0.452689, -13.5355)
+gizmo_extents = 0.57
+
+[node name="Marker3D68" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0996, -0.753683, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D69" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.9856, 0.260278, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D70" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.6745, 0.452644, -3.40984)
+gizmo_extents = 0.57
+
+[node name="Marker3D71" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.7105, 0.341782, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D73" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2545, -0.313749, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D74" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9354, -0.12292, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D75" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.7616, 1.27113, -1.36243)
+gizmo_extents = 0.57
+
+[node name="Marker3D76" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6028, 0.777915, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D77" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7495, 0.855834, -19.7267)
+gizmo_extents = 0.57
+
+[node name="Marker3D78" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.92706, 0.607865, -16.1493)
+gizmo_extents = 0.57
+
+[node name="Marker3D79" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, 0.857079, -19.3221)
+gizmo_extents = 0.57
+
+[node name="Marker3D80" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6305, -0.109471, -13.5355)
+gizmo_extents = 0.57
+
+[node name="Marker3D81" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.81948, 1.18279, -21.6136)
+gizmo_extents = 0.57
+
+[node name="Marker3D82" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966957, 1.66854, -20.2418)
+gizmo_extents = 0.57
+
+[node name="Marker3D83" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966957, 1.63932, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D84" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.70042, 0.879045, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D85" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.7798, 0.641675, -4.422)
+gizmo_extents = 0.57
+
+[node name="Marker3D86" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.844, -0.0398326, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D87" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9644, 0.0523024, -4.44223)
+gizmo_extents = 0.57
+
+[node name="Marker3D88" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5114, 0.76846, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D89" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.41199, 0.437221, -8.18997)
+gizmo_extents = 0.57
+
+[node name="Marker3D90" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.96711, 0.549347, -3.40984)
+gizmo_extents = 0.57
+
+[node name="Marker3D91" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931072, 1.13619, -9.96427)
+gizmo_extents = 0.57
+
+[node name="Marker3D92" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7363, -0.0569437, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D93" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9772, 2.38892, -18.4128)
+gizmo_extents = 0.57
+
+[node name="Marker3D94" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7636, 2.46898, -20.2418)
+gizmo_extents = 0.57
+
+[node name="Marker3D95" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.7996, 2.32074, -9.95812)
+gizmo_extents = 0.57
+
+[node name="Marker3D96" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.35272, 2.08245, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D97" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1279, 2.68319, -17.3154)
+gizmo_extents = 0.57
+
+[node name="Marker3D98" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.6565, 1.46068, -19.7599)
+gizmo_extents = 0.57
+
+[node name="Marker3D99" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.2787, 1.75423, -15.9464)
+gizmo_extents = 0.57
+
+[node name="Marker3D100" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9891, 2.04994, -13.5687)
+gizmo_extents = 0.57
+
+[node name="Marker3D101" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09626, 1.77457, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D102" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8827, 2.23586, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D103" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8827, 1.14822, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D104" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.21532, 0.729534, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D105" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8714, 2.03416, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D106" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5723, 1.57508, -6.95364)
+gizmo_extents = 0.57
+
+[node name="Marker3D107" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5233, 0.995997, -0.396702)
+gizmo_extents = 0.57
+
+[node name="Marker3D108" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.2469, 1.66584, -5.24363)
+gizmo_extents = 0.57
+
+[node name="Marker3D109" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.7039, 1.52918, -21.6136)
+gizmo_extents = 0.57
+
+[node name="Marker3D110" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.4904, 1.84368, -21.6136)
+gizmo_extents = 0.57
+
+[node name="Marker3D111" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.4904, 2.16187, -17.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D112" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.6716, 2.01691, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D113" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.0457, 2.32916, -21.6136)
+gizmo_extents = 0.57
+
+[node name="Marker3D114" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.8266, 2.17842, -15.4224)
+gizmo_extents = 0.57
+
+[node name="Marker3D115" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.823, 1.87541, -12.0392)
+gizmo_extents = 0.57
+
+[node name="Marker3D116" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6094, 1.64198, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D117" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6094, 1.06498, -2.68299)
+gizmo_extents = 0.57
+
+[node name="Marker3D118" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.8871, 1.03203, -0.396702)
+gizmo_extents = 0.57
+
+[node name="Marker3D119" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.6717, 1.59779, -8.87412)
+gizmo_extents = 0.57
+
+[node name="Marker3D120" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.7908, 1.45962, -7.51594)
+gizmo_extents = 0.57
+
+[node name="Marker3D122" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.7935, -0.91069, 9.85464)
+gizmo_extents = 0.57
+
+[node name="Marker3D123" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.8295, -1.19952, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D124" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.4448, -0.123681, 2.65114)
+gizmo_extents = 0.57
+
+[node name="Marker3D125" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6859, 0.765519, 2.4829)
+gizmo_extents = 0.57
+
+[node name="Marker3D126" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.6873, 1.17232, 2.4829)
+gizmo_extents = 0.57
+
+[node name="Marker3D127" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.8635, 0.544007, 16.0458)
+gizmo_extents = 0.57
+
+[node name="Marker3D128" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5669, -0.460796, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D130" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.7105, -0.595576, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D131" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.7105, 0.339822, 21.6211)
+gizmo_extents = 0.57
+
+[node name="Marker3D132" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.6649, 0.449969, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D133" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.7218, -0.123561, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D134" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.3995, 0.472412, 13.5978)
+gizmo_extents = 0.57
+
+[node name="Marker3D135" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9354, 1.19582, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D136" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6028, 0.87774, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D137" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.2136, 0.541958, 0.85837)
+gizmo_extents = 0.57
+
+[node name="Marker3D138" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, 0.380038, 4.39036)
+gizmo_extents = 0.57
+
+[node name="Marker3D139" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, 0.463507, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D140" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6305, 0.520497, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D141" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.87358, 0.066672, 2.51987)
+gizmo_extents = 0.57
+
+[node name="Marker3D142" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966957, 0.163635, 4.39036)
+gizmo_extents = 0.57
+
+[node name="Marker3D143" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.966957, 0.641483, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D144" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.70042, 0.7898, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D145" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6305, 0.712173, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D146" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.844, 0.741443, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D147" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.30811, 1.05241, 19.7889)
+gizmo_extents = 0.57
+
+[node name="Marker3D148" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5114, 1.2166, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D149" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.31948, 1.00865, 13.5978)
+gizmo_extents = 0.57
+
+[node name="Marker3D150" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48574, 0.756956, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D151" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48574, 0.974552, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D152" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20041, 1.1234, 19.7889)
+gizmo_extents = 0.57
+
+[node name="Marker3D153" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5131, 0.359652, 0.85837)
+gizmo_extents = 0.57
+
+[node name="Marker3D154" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7636, 0.10094, 2.42759)
+gizmo_extents = 0.57
+
+[node name="Marker3D155" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7636, -0.943049, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D156" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09626, -0.290703, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D157" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9072, 0.517285, 1.82972)
+gizmo_extents = 0.57
+
+[node name="Marker3D158" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.5592, 0.835276, 4.39036)
+gizmo_extents = 0.57
+
+[node name="Marker3D159" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6937, 0.98069, 11.6789)
+gizmo_extents = 0.57
+
+[node name="Marker3D160" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0263, -0.239744, 11.6789)
+gizmo_extents = 0.57
+
+[node name="Marker3D161" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.65093, -0.199169, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D162" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4374, -0.34436, 18.2272)
+gizmo_extents = 0.57
+
+[node name="Marker3D163" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4374, 0.333083, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D164" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76999, 0.579006, 24.6927)
+gizmo_extents = 0.57
+
+[node name="Marker3D165" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4073, 0.808423, 14.6952)
+gizmo_extents = 0.57
+
+[node name="Marker3D166" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.1937, 1.73541, 13.5978)
+gizmo_extents = 0.57
+
+[node name="Marker3D167" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6578, 1.65318, 25.4243)
+gizmo_extents = 0.57
+
+[node name="Marker3D168" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9904, 0.573703, 19.9372)
+gizmo_extents = 0.57
+
+[node name="Marker3D169" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.1848, 0.985578, 0.85837)
+gizmo_extents = 0.57
+
+[node name="Marker3D170" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.4904, 0.832667, 4.39036)
+gizmo_extents = 0.57
+
+[node name="Marker3D171" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.4904, 1.03243, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D172" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.823, 1.54737, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D174" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.753, -0.971087, 10.5815)
+gizmo_extents = 0.57
+
+[node name="Marker3D175" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.823, 2.14878, 17.1298)
+gizmo_extents = 0.57
+
+[node name="Marker3D176" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6094, 1.46198, 19.2332)
+gizmo_extents = 0.57
+
+[node name="Marker3D177" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.1453, 0.0386582, 21.8923)
+gizmo_extents = 0.57
+
+[node name="Marker3D178" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9421, 2.30933, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D180" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.7172, -0.837391, 23.3209)
+gizmo_extents = 0.57
+
+[node name="Marker3D181" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.0801, 0.574971, 26.2012)
+gizmo_extents = 0.57
+
+[node name="Marker3D182" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.8295, 0.309585, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D183" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.2936, 0.123335, 32.3923)
+gizmo_extents = 0.57
+
+[node name="Marker3D185" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6859, 0.629921, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D186" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5555, 1.30099, 24.3324)
+gizmo_extents = 0.57
+
+[node name="Marker3D187" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2934, -0.26898, 36.3985)
+gizmo_extents = 0.57
+
+[node name="Marker3D188" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.5669, -0.24951, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D189" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.961, -0.669651, 38.9406)
+gizmo_extents = 0.57
+
+[node name="Marker3D190" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.7105, 0.0294715, 42.4726)
+gizmo_extents = 0.57
+
+[node name="Marker3D191" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.4211, -0.110143, 42.6521)
+gizmo_extents = 0.57
+
+[node name="Marker3D193" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.4324, -0.400247, 36.461)
+gizmo_extents = 0.57
+
+[node name="Marker3D194" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.646, -0.3786, 38.5944)
+gizmo_extents = 0.57
+
+[node name="Marker3D195" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9354, 0.101251, 48.6637)
+gizmo_extents = 0.57
+
+[node name="Marker3D196" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6028, 1.24079, 48.6637)
+gizmo_extents = 0.57
+
+[node name="Marker3D197" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4601, 1.27145, 23.7216)
+gizmo_extents = 0.57
+
+[node name="Marker3D198" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, 1.44253, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D199" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.9631, 1.32122, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D200" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6305, 0.513815, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D201" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.81948, 1.47943, 27.4932)
+gizmo_extents = 0.57
+
+[node name="Marker3D202" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.74361, 1.2395, 23.7216)
+gizmo_extents = 0.57
+
+[node name="Marker3D203" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.74361, 1.67053, 29.9128)
+gizmo_extents = 0.57
+
+[node name="Marker3D204" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.41098, 1.59894, 29.9128)
+gizmo_extents = 0.57
+
+[node name="Marker3D205" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6305, -0.0893371, 40.9792)
+gizmo_extents = 0.57
+
+[node name="Marker3D206" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9374, 0.535267, 39.3792)
+gizmo_extents = 0.57
+
+[node name="Marker3D207" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5546, -0.346213, 44.4655)
+gizmo_extents = 0.57
+
+[node name="Marker3D208" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5114, -0.988472, 48.6637)
+gizmo_extents = 0.57
+
+[node name="Marker3D209" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.56593, 1.67432, 36.461)
+gizmo_extents = 0.57
+
+[node name="Marker3D210" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.931072, 1.73053, 42.4726)
+gizmo_extents = 0.57
+
+[node name="Marker3D211" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.21347, 1.39222, 46.5303)
+gizmo_extents = 0.57
+
+[node name="Marker3D212" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.44686, 0.849658, 42.6521)
+gizmo_extents = 0.57
+
+[node name="Marker3D213" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.58754, 1.50482, 31.2879)
+gizmo_extents = 0.57
+
+[node name="Marker3D214" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5173, 0.531283, 25.0934)
+gizmo_extents = 0.57
+
+[node name="Marker3D215" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.7636, 0.0824523, 39.1251)
+gizmo_extents = 0.57
+
+[node name="Marker3D216" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3885, 0.644305, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D217" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.1644, 0.38672, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D218" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.6646, 0.614972, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D219" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.6526, -0.485179, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D220" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9972, -0.338192, 39.1251)
+gizmo_extents = 0.57
+
+[node name="Marker3D221" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.09626, 1.16237, 42.4726)
+gizmo_extents = 0.57
+
+[node name="Marker3D222" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8827, 0.215054, 44.1187)
+gizmo_extents = 0.57
+
+[node name="Marker3D224" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1862, 1.40823, 46.5303)
+gizmo_extents = 0.57
+
+[node name="Marker3D225" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.8714, -0.600896, 44.1187)
+gizmo_extents = 0.57
+
+[node name="Marker3D226" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3598, -0.970085, 42.4726)
+gizmo_extents = 0.57
+
+[node name="Marker3D229" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.4059, 1.39476, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D230" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.4613, 1.65533, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D231" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3932, 0.935808, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D232" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7939, -0.0698627, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D233" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.336, 0.591604, 29.7332)
+gizmo_extents = 0.57
+
+[node name="Marker3D234" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.753, 1.06917, 35.9243)
+gizmo_extents = 0.57
+
+[node name="Marker3D235" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.823, -0.87742, 42.4726)
+gizmo_extents = 0.57
+
+[node name="Marker3D236" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.6094, -0.0302616, 42.4726)
+gizmo_extents = 0.57
+
+[node name="Marker3D239" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.4737, 0.875201, 37.7624)
+gizmo_extents = 0.57
+
+[node name="Marker3D240" type="Marker3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.2244, -0.0691502, 46.6518)
+gizmo_extents = 0.57
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.201129, 0.979565, 0, -0.979565, 0.201129, 0, 0, 0)
 shadow_enabled = true
-
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 30, 0, -0.5, 0)
-visible = false
-use_collision = true
 
 [node name="Character" parent="." instance=ExtResource("4_ltxe0")]
 base_speed = 3.5
@@ -72,11 +959,12 @@ pausing_enabled = false
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bjne5")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Terrain" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = ExtResource("3_py7q8")
 surface_material_override/0 = ExtResource("4_k3hfb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Terrain"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_viqlu")

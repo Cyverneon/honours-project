@@ -52,7 +52,7 @@ func create_tree(pos : Vector3, params : param_ranges):
 
 func spawn_trees():
 	for child in get_children():
-		if child is Node3D:
+		if child is Marker3D:
 			if group == 1:
 				create_tree(child.position, params_normal)
 			elif group == 2:
