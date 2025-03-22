@@ -1,6 +1,6 @@
 extends Node
 
-var group : int = 2
+var group : int = 1
 
 const param_ranges = preload("param_ranges.gd")
 var params : param_ranges
@@ -11,7 +11,8 @@ func create_tree(pos : Vector3):
 	# fixed parameters
 	tree.trunk_segments = 6
 	tree.material_trunk = load("res://materials/bark_material.tres")
-	tree.twig_enable = false # TEMP FOR DEBUGGING
+	tree.material_twig = load("res://materials/leaf_material.tres")
+	#tree.twig_enable = false # TEMP FOR DEBUGGING
 	tree.position = pos
 	tree.trunk_uv_multiplier = 1
 	
