@@ -9,7 +9,9 @@
 cull_mode = 1
 albedo_texture = ExtResource("1_ineoy")
 roughness_texture = ExtResource("4_fk704")
+roughness_texture_channel = 4
 normal_enabled = true
 normal_texture = ExtResource("3_pr236")
 ao_enabled = true
 ao_texture = ExtResource("2_ytsid")
+ao_texture_channel = 4

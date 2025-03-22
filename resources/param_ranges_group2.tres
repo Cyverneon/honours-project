@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://p3vkgykyl3i7"]
+
+[ext_resource type="Script" path="res://scripts/param_ranges.gd" id="1_k2rc7"]
+
+[resource]
+script = ExtResource("1_k2rc7")
+branches_count_min = 1
+branches_count_max = 8
