@@ -30,6 +30,7 @@ func randomize_tree_params(tree : Tree3D, ranges : param_ranges):
 	tree.trunk_kink = randf_range(ranges.kink_min, ranges.kink_max)
 	tree.trunk_twist = randf_range(ranges.twist_min, ranges.twist_max)
 	tree.trunk_length = randf_range(ranges.length_min, ranges.length_max)
+	tree.twig_scale = randf_range(ranges.twig_size_min, ranges.twig_size_max)
 
 func create_and_return_tree_static_body():
 	var static_body = StaticBody3D.new()
@@ -51,7 +52,7 @@ func create_tree(pos : Vector3, ranges : param_ranges):
 	
 	#materials
 	tree.material_trunk = load("res://materials/bark_material.tres").duplicate()
-	tree.material_twig = load("res://materials/leaf_material.tres").duplicate()
+	tree.material_twig = load("res://materials/branch_material.tres").duplicate()
 
 	# randomized parameters
 	randomize_tree_params(tree, ranges)
@@ -67,7 +68,7 @@ func spawn_trees():
 			if group == 1:
 				create_tree(child.position, params_normal)
 			elif group == 2:
-				if (randf() < 0.5):
+				if (randf() < 0.3):
 					create_tree(child.position, params_extreme)
 				else:
 					create_tree(child.position, params_normal)

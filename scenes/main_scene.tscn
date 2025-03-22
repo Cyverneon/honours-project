@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://dd6vka45f7tbu"]
+[gd_scene load_steps=12 format=3 uid="uid://dd6vka45f7tbu"]
 
 [ext_resource type="Script" path="res://scripts/tree_spawner.gd" id="1_ddrfl"]
+[ext_resource type="Script" path="res://scripts/photo_cam.gd" id="2_ec6l3"]
 [ext_resource type="ArrayMesh" uid="uid://dqov6j6icsnfu" path="res://meshes/terrain.obj" id="3_py7q8"]
 [ext_resource type="Material" uid="uid://br7nphenp8c6r" path="res://materials/terrain_material.tres" id="4_k3hfb"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="4_ltxe0"]
@@ -33,6 +34,69 @@ size = Vector3(102, 20, 1)
 size = Vector3(1, 20, 102)
 
 [node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_bjne5")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.201129, 0.979565, 0, -0.979565, 0.201129, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Character" parent="." instance=ExtResource("4_ltxe0")]
+base_speed = 3.5
+sprint_speed = 5.0
+controls = {
+"BACKWARD": "backwards",
+"CROUCH": "crouch",
+"FORWARD": "forwards",
+"JUMP": "jump",
+"LEFT": "left",
+"PAUSE": "ui_cancel",
+"RIGHT": "right",
+"SPRINT": "sprint"
+}
+in_air_momentum = false
+continuous_jumping = false
+pausing_enabled = false
+
+[node name="PhotoCamera" type="Node" parent="."]
+script = ExtResource("2_ec6l3")
+
+[node name="Terrain" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = ExtResource("3_py7q8")
+surface_material_override/0 = ExtResource("4_k3hfb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Terrain"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_viqlu")
+
+[node name="EdgeBoundaries" type="Node" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="EdgeBoundaries"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50.5)
+shape = SubResource("BoxShape3D_p3iqx")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="EdgeBoundaries"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50.5)
+shape = SubResource("BoxShape3D_p3iqx")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="EdgeBoundaries"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5, 0, 0)
+shape = SubResource("BoxShape3D_ftgfj")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="EdgeBoundaries"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.5, 0, 0)
+shape = SubResource("BoxShape3D_ftgfj")
 
 [node name="TreeSpawner" type="Node" parent="."]
 script = ExtResource("1_ddrfl")
@@ -940,63 +1004,3 @@ gizmo_extents = 0.57
 [node name="Marker3D240" type="Marker3D" parent="TreeSpawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.2244, -0.0691502, 46.6518)
 gizmo_extents = 0.57
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.201129, 0.979565, 0, -0.979565, 0.201129, 0, 0, 0)
-shadow_enabled = true
-
-[node name="Character" parent="." instance=ExtResource("4_ltxe0")]
-base_speed = 3.5
-sprint_speed = 5.0
-controls = {
-"BACKWARD": "backwards",
-"CROUCH": "crouch",
-"FORWARD": "forwards",
-"JUMP": "jump",
-"LEFT": "left",
-"PAUSE": "ui_cancel",
-"RIGHT": "right",
-"SPRINT": "sprint"
-}
-in_air_momentum = false
-continuous_jumping = false
-pausing_enabled = false
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_bjne5")
-
-[node name="Terrain" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
-mesh = ExtResource("3_py7q8")
-surface_material_override/0 = ExtResource("4_k3hfb")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Terrain"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_viqlu")
-
-[node name="EdgeBoundaries" type="Node" parent="."]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="EdgeBoundaries"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50.5)
-shape = SubResource("BoxShape3D_p3iqx")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="EdgeBoundaries"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50.5)
-shape = SubResource("BoxShape3D_p3iqx")
-
-[node name="StaticBody3D3" type="StaticBody3D" parent="EdgeBoundaries"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.5, 0, 0)
-shape = SubResource("BoxShape3D_ftgfj")
-
-[node name="StaticBody3D4" type="StaticBody3D" parent="EdgeBoundaries"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EdgeBoundaries/StaticBody3D4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.5, 0, 0)
-shape = SubResource("BoxShape3D_ftgfj")

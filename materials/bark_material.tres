@@ -1,8 +1,9 @@
-[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://bneqtfy7b1te2"]
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://bneqtfy7b1te2"]
 
 [ext_resource type="Texture2D" uid="uid://cvk8nifmf3gja" path="res://textures/Bark014_1K-JPG/Bark014_1K-JPG_Color.jpg" id="1_ineoy"]
 [ext_resource type="Texture2D" uid="uid://bj4uy3cgdithd" path="res://textures/Bark014_1K-JPG/Bark014_1K-JPG_AmbientOcclusion.jpg" id="2_ytsid"]
 [ext_resource type="Texture2D" uid="uid://cb5qdfdr3ey5u" path="res://textures/Bark014_1K-JPG/Bark014_1K-JPG_NormalGL.jpg" id="3_pr236"]
+[ext_resource type="Texture2D" uid="uid://2phh7xsk4a2i" path="res://textures/Bark014_1K-JPG/Bark014_1K-JPG_Displacement.jpg" id="3_sbxqx"]
 [ext_resource type="Texture2D" uid="uid://qlqcs3q8pfv8" path="res://textures/Bark014_1K-JPG/Bark014_1K-JPG_Roughness.jpg" id="4_fk704"]
 
 [resource]
@@ -15,3 +16,4 @@ normal_texture = ExtResource("3_pr236")
 ao_enabled = true
 ao_texture = ExtResource("2_ytsid")
 ao_texture_channel = 4
+heightmap_texture = ExtResource("3_sbxqx")

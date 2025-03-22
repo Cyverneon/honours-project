@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://b2cy611gttxdm"]
+
+[ext_resource type="Texture2D" uid="uid://b5bqviv8sdox8" path="res://textures/LeafSet002_1K-PNG/Branch1/Branch1Color.png" id="1_o5u34"]
+[ext_resource type="Texture2D" uid="uid://d2lghviqxebq" path="res://textures/LeafSet002_1K-PNG/Branch1/Branch1Roughness.png" id="2_atgjh"]
+[ext_resource type="Texture2D" uid="uid://d1e7osnuoi2y4" path="res://textures/LeafSet002_1K-PNG/Branch1/Branch1Normal.png" id="2_hucan"]
+[ext_resource type="Texture2D" uid="uid://cnu4pc8xmiu84" path="res://textures/LeafSet002_1K-PNG/Branch1/Branch1AmbientOcclusion.png" id="2_ovjtx"]
+
+[resource]
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_o5u34")
+metallic_specular = 0.2
+roughness_texture = ExtResource("2_atgjh")
+normal_scale = 0.4
+normal_texture = ExtResource("2_hucan")
+ao_texture = ExtResource("2_ovjtx")

@@ -64,6 +64,9 @@ extends Resource
 @export var length_min : float = 1
 @export var length_max : float = 2.4
 
+@export var twig_size_min : float = 0.2
+@export var twig_size_max : float = 0.4
+
 # min and max amount the bark colour can be tinted to a random colour
 @export var bark_color_min : float = 0.0
 @export var bark_color_max : float = 0.2
