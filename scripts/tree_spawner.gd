@@ -37,6 +37,15 @@ func create_tree(pos : Vector3):
 	tree.trunk_kink = randf_range(params.kink_min, params.kink_max)
 	tree.trunk_twist = randf_range(params.twist_min, params.twist_max)
 	tree.trunk_length = randf_range(params.length_min, params.length_max)
+	
+	#collider
+	var static_body = StaticBody3D.new()
+	var collision_shape = CollisionShape3D.new()
+	var cylinder = CylinderShape3D.new()
+	cylinder.height = 6
+	collision_shape.shape = cylinder
+	static_body.add_child(collision_shape)
+	tree.add_child(static_body)
 
 	return tree
 

@@ -1,8 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dd6vka45f7tbu"]
+[gd_scene load_steps=3 format=3 uid="uid://dd6vka45f7tbu"]
 
 [ext_resource type="Script" path="res://scripts/tree_spawner.gd" id="1_ddrfl"]
-[ext_resource type="Material" uid="uid://bneqtfy7b1te2" path="res://materials/bark_material.tres" id="2_g16gs"]
-[ext_resource type="Material" uid="uid://bk083ohtfum5i" path="res://materials/leaf_material.tres" id="3_r8bxy"]
 [ext_resource type="PackedScene" uid="uid://cc1m2a1obsyn4" path="res://addons/fpc/character.tscn" id="4_ltxe0"]
 
 [node name="Node3D" type="Node3D"]
@@ -10,24 +8,21 @@
 [node name="TreeSpawner" type="Node" parent="."]
 script = ExtResource("1_ddrfl")
 
-[node name="Node3D" type="Node3D" parent="TreeSpawner"]
-
 [node name="Node3D2" type="Node3D" parent="TreeSpawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 
 [node name="Node3D3" type="Node3D" parent="TreeSpawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 
+[node name="Node3D4" type="Node3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102078, 0, 10.4929)
+
+[node name="Node3D5" type="Node3D" parent="TreeSpawner"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.102078, 0, -10.2025)
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 light_color = Color(1, 0.8375, 0.61, 1)
-
-[node name="Tree3D" type="Tree3D" parent="."]
-seed = 22
-twig_scale = 0.2
-material_trunk = ExtResource("2_g16gs")
-material_twig = ExtResource("3_r8bxy")
-visible = false
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 30, 0, -0.5, 0)
