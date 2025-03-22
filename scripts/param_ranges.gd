@@ -61,5 +61,5 @@ extends Resource
 @export var twist_max : float = 4
 
 # length of trunk before branches start
-@export var length_min = 1
-@export var length_max = 2.4
+@export var length_min : float = 1
+@export var length_max : float = 2.4

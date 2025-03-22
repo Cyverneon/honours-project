@@ -1,11 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dd6vka45f7tbu"]
+[gd_scene load_steps=3 format=3 uid="uid://dd6vka45f7tbu"]
 
 [ext_resource type="Script" path="res://scripts/tree_spawner.gd" id="1_ddrfl"]
+[ext_resource type="Material" uid="uid://bneqtfy7b1te2" path="res://materials/bark_material.tres" id="2_g16gs"]
 
 [node name="Node3D" type="Node3D"]
-
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.04375, 0.65148)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6797, 8.71257)
@@ -21,5 +19,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
 [node name="Node3D3" type="Node3D" parent="TreeSpawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
 
-[node name="TestTree3D" type="Tree3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+light_color = Color(1, 0.8375, 0.61, 1)
+
+[node name="Tree3D" type="Tree3D" parent="."]
+seed = 22
+trunk_length = 4.978
+trunk_uv_multiplier = 1.0
+twig_enable = false
+material_trunk = ExtResource("2_g16gs")
 visible = false
