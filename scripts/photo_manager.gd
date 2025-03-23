@@ -24,7 +24,6 @@ var popup_fadeout_timer : float = 0.0
 
 var album_index : int = 0
 
-
 func take_photo():
 	var image = viewport.get_texture().get_image()
 	var texture = ImageTexture.create_from_image(image)
@@ -110,4 +109,5 @@ func _on_back_button_pressed():
 
 func _on_finish_button_pressed():
 	get_tree().paused = false
+	GameManager.set_end_time()
 	get_tree().change_scene_to_file(summary_scene)

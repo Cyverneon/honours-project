@@ -70,6 +70,9 @@ func spawn_trees():
 					create_tree(child.position, params_extreme)
 				else:
 					create_tree(child.position, params_normal)
+	# timer is started here because this process takes a while
+	# and I don't want to start measuring the time until the scene is finished loading
+	GameManager.set_start_time()
 
 func _ready():
 	spawn_trees()
