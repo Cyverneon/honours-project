@@ -1,7 +1,5 @@
 extends Node
 
-var group : int = 1
-
 const param_ranges = preload("param_ranges.gd")
 var params_normal : param_ranges = load("res://resources/param_ranges_group1.tres")
 var params_extreme : param_ranges = load("res://resources/param_ranges_group2.tres")
@@ -65,9 +63,9 @@ func create_tree(pos : Vector3, ranges : param_ranges):
 func spawn_trees():
 	for child in get_children():
 		if child is Marker3D:
-			if group == 1:
+			if GameManager.group == 1:
 				create_tree(child.position, params_normal)
-			elif group == 2:
+			elif GameManager.group == 2:
 				if (randf() < 0.3):
 					create_tree(child.position, params_extreme)
 				else:
