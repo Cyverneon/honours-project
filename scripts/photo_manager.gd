@@ -4,14 +4,19 @@ extends Node
 @export var texture_rect : TextureRect
 @export var viewport : Viewport
 
+var photos : Array[ImageTexture]
+
 func take_photo():
 	var image = viewport.get_texture().get_image()
 	var texture = ImageTexture.create_from_image(image)
+	photos.append(texture)
 	texture_rect.set_texture(texture)
 
 func _input(event):
 	if event.is_action_pressed("photo"):
 		take_photo()
+	if event.is_action_pressed("album"):
+		pass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
