@@ -1032,6 +1032,7 @@ controls = NodePath("ControslLabel")
 left_button = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/LeftButton")
 right_button = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/RightButton")
 counter = NodePath("PhotoAlbum/VBoxContainer/LabelCounter")
+popup_fade_time = 0.5
 
 [node name="PhotoAlbum" type="Control" parent="PhotoManager"]
 layout_mode = 3
@@ -1050,7 +1051,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.654902)
+color = Color(0, 0, 0, 0.772549)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PhotoManager/PhotoAlbum"]
 layout_mode = 1
@@ -1085,6 +1086,7 @@ theme_override_constants/separation = 15
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_font_sizes/font_size = 20
 text = "<"
 icon_alignment = 1
 
@@ -1117,6 +1119,7 @@ stretch_mode = 5
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_font_sizes/font_size = 20
 text = ">"
 icon_alignment = 1
 
@@ -1140,11 +1143,13 @@ size_flags_horizontal = 4
 text = "Finish Game"
 
 [node name="PhotoPopup" type="TextureRect" parent="PhotoManager"]
-offset_left = 917.0
-offset_top = 472.0
-offset_right = 1112.0
-offset_bottom = 603.0
-expand_mode = 3
+offset_left = 891.0
+offset_top = 485.0
+offset_right = 1121.0
+offset_bottom = 615.0
+texture = ExtResource("7_5q52x")
+expand_mode = 2
+stretch_mode = 5
 
 [node name="ControslLabel" type="Label" parent="PhotoManager"]
 offset_left = 12.0

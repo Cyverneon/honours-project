@@ -11,12 +11,19 @@ extends Node
 @export var right_button : Button
 @export var counter : Label
 
+@export_group("Config")
+@export var popup_fade_time : float = 1.0
+
 var summary_scene := "res://scenes/summary.tscn"
 
 var photos : Array[ImageTexture]
 var in_album : bool = false
 
+var is_popup_fadeout : bool = true
+var popup_fadeout_timer : float = 0.0
+
 var album_index : int = 0
+
 
 func take_photo():
 	var image = viewport.get_texture().get_image()
@@ -24,6 +31,8 @@ func take_photo():
 	photos.append(texture)
 	GameManager.photos_count += 1
 	photo_popup.set_texture(texture)
+	is_popup_fadeout = true
+	popup_fadeout_timer = 2.0
 
 func hide_photo_album():
 	in_album = false
@@ -37,6 +46,7 @@ func show_photo_album():
 	photo_album.show()
 	controls.hide()
 	get_tree().paused = true
+	popup_fadeout_timer = 0.0
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 func check_side_buttons():
@@ -59,9 +69,17 @@ func load_photo_album():
 		album_index = 0
 		counter.text = "Total: 0"
 	else:
+		album_index = photos.size() - 1
 		main_photo.texture = photos[album_index]
 		update_counter()
 	check_side_buttons()
+
+func photo_popup_fadeout(delta):
+	if is_popup_fadeout:
+		popup_fadeout_timer -= (delta/popup_fade_time)
+		photo_popup.modulate = Color(1.0, 1.0, 1.0, popup_fadeout_timer)
+		if (popup_fadeout_timer <= 0):
+			is_popup_fadeout = false
 
 func _input(event):
 	if event.is_action_pressed("photo"):
@@ -77,10 +95,9 @@ func _input(event):
 func _ready():
 	hide_photo_album()
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	photo_popup_fadeout(delta)
 
 func _on_left_button_pressed():
 	switch_photo(album_index-1)
