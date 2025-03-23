@@ -39,12 +39,12 @@ layout_mode = 2
 text = "This is a game demo where you can explore a level with procedurally generated trees and take photos.
 
 Controls:
-WASD to move
-Space to jump
-Shift to sprint
-Right click to take a photo
-P to view photo album
-Controls are also shown on-screen in the level so don't worry about remembering them.
+(Controls are also shown on-screen in the level so don't worry about remembering them)
+- WASD to move
+- Space to jump
+- Shift to sprint
+- Right click to take a photo
+- P to view photo album
 
 The photo album lets you view all the photos you have taken so far, as well as having the option to finish the game and move on to the summary screen. You have to take at least 4 photos before you can finish, but you can take as many as you like after this. Play for as long as you want until you feel you have had enough.
 
