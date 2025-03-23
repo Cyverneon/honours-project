@@ -8,6 +8,7 @@ func _ready():
 	group_label.text = "Build for participant group " + str(GameManager.group)
 
 func load_game():
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	get_tree().change_scene_to_file(loading_scene)
 
 func _on_button_pressed():
