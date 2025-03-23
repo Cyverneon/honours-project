@@ -9,10 +9,12 @@ extends Node
 @export var controls : Label
 @export var left_button : Button
 @export var right_button : Button
+@export var finish_button : Button
 @export var counter : Label
 
 @export_group("Config")
 @export var popup_fade_time : float = 1.0
+@export var photos_threshold : int = 4
 
 var summary_scene := "res://scenes/summary.tscn"
 
@@ -52,6 +54,14 @@ func check_side_buttons():
 	left_button.disabled = (album_index == 0)
 	right_button.disabled = (album_index >= (photos.size()-1))
 
+func check_photos_threshold():
+	if (photos.size() < photos_threshold):
+		finish_button.text = "You need to take at least 4 photos before finishing"
+		finish_button.disabled = true
+	else:
+		finish_button.text = "Finish Game"
+		finish_button.disabled = false
+
 func update_counter():
 	counter.text = "Photo: " + str(album_index+1) + " / Total: " + str(photos.size())
 
@@ -72,6 +82,7 @@ func load_photo_album():
 		main_photo.texture = photos[album_index]
 		update_counter()
 	check_side_buttons()
+	check_photos_threshold()
 
 func photo_popup_fadeout(delta):
 	if is_popup_fadeout:

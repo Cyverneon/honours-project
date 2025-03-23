@@ -1021,7 +1021,7 @@ crouch_enabled = false
 continuous_jumping = false
 pausing_enabled = false
 
-[node name="PhotoManager" type="Node" parent="." node_paths=PackedStringArray("viewport", "photo_album", "photo_popup", "main_photo", "controls", "left_button", "right_button", "counter")]
+[node name="PhotoManager" type="Node" parent="." node_paths=PackedStringArray("viewport", "photo_album", "photo_popup", "main_photo", "controls", "left_button", "right_button", "finish_button", "counter")]
 process_mode = 3
 script = ExtResource("6_arj8d")
 viewport = NodePath("../SubViewportContainer/SubViewport")
@@ -1031,6 +1031,7 @@ main_photo = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/PhotoBorder/Textur
 controls = NodePath("ControslLabel")
 left_button = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/LeftButton")
 right_button = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/RightButton")
+finish_button = NodePath("PhotoAlbum/VBoxContainer/FinishButton")
 counter = NodePath("PhotoAlbum/VBoxContainer/LabelCounter")
 popup_fade_time = 0.5
 
