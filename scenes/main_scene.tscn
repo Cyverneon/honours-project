@@ -1021,13 +1021,17 @@ crouch_enabled = false
 continuous_jumping = false
 pausing_enabled = false
 
-[node name="PhotoManager" type="Node" parent="." node_paths=PackedStringArray("viewport", "photo_album", "photo_popup", "controls")]
+[node name="PhotoManager" type="Node" parent="." node_paths=PackedStringArray("viewport", "photo_album", "photo_popup", "main_photo", "controls", "left_button", "right_button", "counter")]
 process_mode = 3
 script = ExtResource("6_arj8d")
 viewport = NodePath("../SubViewportContainer/SubViewport")
 photo_album = NodePath("PhotoAlbum")
 photo_popup = NodePath("PhotoPopup")
+main_photo = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/PhotoBorder/TextureRect")
 controls = NodePath("ControslLabel")
+left_button = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/LeftButton")
+right_button = NodePath("PhotoAlbum/VBoxContainer/HBoxContainer/RightButton")
+counter = NodePath("PhotoAlbum/VBoxContainer/LabelCounter")
 
 [node name="PhotoAlbum" type="Control" parent="PhotoManager"]
 layout_mode = 3
@@ -1036,6 +1040,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="ColorRect" type="ColorRect" parent="PhotoManager/PhotoAlbum"]
 layout_mode = 1
@@ -1059,9 +1065,9 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 30
+theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+[node name="LabelPhotoAlbum" type="Label" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
@@ -1069,12 +1075,34 @@ theme_override_font_sizes/font_size = 26
 text = "Photo Album"
 horizontal_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 15
+
+[node name="LeftButton" type="Button" parent="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_vertical = 4
+text = "<"
+icon_alignment = 1
+
+[node name="PhotoBorder" type="ColorRect" parent="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(660, 380)
 layout_mode = 2
 color = Color(0.904813, 0.881514, 0.818608, 1)
 
-[node name="TextureRect" type="TextureRect" parent="PhotoManager/PhotoAlbum/VBoxContainer/ColorRect"]
+[node name="Label" type="Label" parent="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer/PhotoBorder"]
+layout_mode = 0
+offset_right = 660.0
+offset_bottom = 380.0
+theme_override_colors/font_color = Color(0.218467, 0.188567, 0.161067, 1)
+text = "No photos yet"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer/PhotoBorder"]
 custom_minimum_size = Vector2(640, 360)
 layout_mode = 2
 offset_left = 10.0
@@ -1085,8 +1113,30 @@ texture = ExtResource("7_5q52x")
 expand_mode = 3
 stretch_mode = 5
 
-[node name="Button" type="Button" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+[node name="RightButton" type="Button" parent="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(30, 30)
 layout_mode = 2
+size_flags_vertical = 4
+text = ">"
+icon_alignment = 1
+
+[node name="LabelCounter" type="Label" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+text = "Photo: 0 / Total: 0"
+horizontal_alignment = 1
+
+[node name="BackButton" type="Button" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+custom_minimum_size = Vector2(660, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Back to Game"
+
+[node name="FinishButton" type="Button" parent="PhotoManager/PhotoAlbum/VBoxContainer"]
+custom_minimum_size = Vector2(660, 0)
+layout_mode = 2
+size_flags_horizontal = 4
 text = "Finish Game"
 
 [node name="PhotoPopup" type="TextureRect" parent="PhotoManager"]
@@ -1104,6 +1154,9 @@ offset_bottom = 34.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 16
-text = "WASD: Walk | Space: Jump | Shift: Sprint | Right click: Take photo"
+text = "WASD: Walk | Space: Jump | Shift: Sprint | Right click: Take photo | P: View photo album"
 
-[connection signal="pressed" from="PhotoManager/PhotoAlbum/VBoxContainer/Button" to="PhotoManager" method="_on_finish_button_pressed"]
+[connection signal="pressed" from="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer/LeftButton" to="PhotoManager" method="_on_left_button_pressed"]
+[connection signal="pressed" from="PhotoManager/PhotoAlbum/VBoxContainer/HBoxContainer/RightButton" to="PhotoManager" method="_on_right_button_pressed"]
+[connection signal="pressed" from="PhotoManager/PhotoAlbum/VBoxContainer/BackButton" to="PhotoManager" method="_on_back_button_pressed"]
+[connection signal="pressed" from="PhotoManager/PhotoAlbum/VBoxContainer/FinishButton" to="PhotoManager" method="_on_finish_button_pressed"]
