@@ -1,6 +1,6 @@
 extends Node
 
-var group : int = 2
+var group : int = 1
 
 const param_ranges = preload("param_ranges.gd")
 var params_normal : param_ranges = load("res://resources/param_ranges_group1.tres")

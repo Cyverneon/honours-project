@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://cls0uta8avti1"]
+
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_wi4kv"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wi4kv")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(1000, 400)
+layout_mode = 2
+text = "This is a game demo where you can explore a level with procedurally generated trees and take photos
+
+Controls:
+WASD to move
+Space to jump
+Shift to sprint
+Right click to take a photo
+P to view photo album
+Controls are also shown on-screen in the level so don't worry about remembering them.
+
+The photo album lets you view all the photos you have taken so far, as well as having the option to finish the game and move on to the summary screen. You have to take at least 4 photos before you can finish, but you can take as many as you like after this. Play for as long as you want until you feel you have had enough.
+
+The summary screen will show some info for you to screenshot and send."
+autowrap_mode = 2
+clip_text = true
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play Game"
+
+[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Build for participant group: 1"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
