@@ -1,0 +1,67 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0bfg02vq0u38"]
+
+[ext_resource type="Script" path="res://scripts/summary.gd" id="1_xua1c"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("time_label", "photos_label", "group_label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xua1c")
+time_label = NodePath("VBoxContainer/TimeLabel")
+photos_label = NodePath("VBoxContainer/PhotosLabel")
+group_label = NodePath("VBoxContainer/GroupLabel")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.164706, 0.180392, 0.156863, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.0
+offset_top = -137.5
+offset_right = 210.0
+offset_bottom = 137.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="TimeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "You played for [00:00]"
+horizontal_alignment = 1
+
+[node name="PhotosLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "You took [0] photos"
+horizontal_alignment = 1
+
+[node name="GroupLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Participant group: [x]"
+horizontal_alignment = 1
+
+[node name="InfoLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Please screenshot this information and send it.
+Thank you!"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

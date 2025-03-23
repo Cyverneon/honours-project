@@ -10,6 +10,12 @@ offset_bottom = 40.0
 script = ExtResource("1_wi4kv")
 group_label = NodePath("CenterContainer/VBoxContainer/GroupLabel")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.163183, 0.178754, 0.155363, 1)
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -30,7 +36,7 @@ alignment = 1
 [node name="InfoLabel" type="Label" parent="CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(1000, 400)
 layout_mode = 2
-text = "This is a game demo where you can explore a level with procedurally generated trees and take photos
+text = "This is a game demo where you can explore a level with procedurally generated trees and take photos.
 
 Controls:
 WASD to move
@@ -52,6 +58,7 @@ text = "Play Game"
 
 [node name="GroupLabel" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 12
 text = "Build for participant group: [not set]"
 horizontal_alignment = 2
 
