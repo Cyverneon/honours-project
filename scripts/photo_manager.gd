@@ -12,6 +12,8 @@ extends Node
 @export var finish_button : Button
 @export var counter : Label
 
+@onready var reticle = get_tree().root.get_node("Reticle")
+
 @export_group("Config")
 @export var popup_fade_time : float = 1.0
 @export var photos_threshold : int = 4
@@ -39,6 +41,7 @@ func hide_photo_album():
 	in_album = false
 	photo_album.hide()
 	controls.show()
+	reticle.show()
 	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED	
 
@@ -46,6 +49,7 @@ func show_photo_album():
 	in_album = true
 	photo_album.show()
 	controls.hide()
+	reticle.hide()
 	get_tree().paused = true
 	popup_fadeout_timer = 0.0
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
