@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dur230wbpxm2m"]
+
+[ext_resource type="Texture2D" uid="uid://c22ase5vy2tll" path="res://textures/kloofendal_48d_partly_cloudy_puresky_4k.exr" id="1_7dcvy"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j33s4"]
+panorama = ExtResource("1_7dcvy")
+
+[sub_resource type="Sky" id="Sky_oqvgu"]
+sky_material = SubResource("PanoramaSkyMaterial_j33s4")
+
+[sub_resource type="Environment" id="Environment_bjne5"]
+background_mode = 2
+sky = SubResource("Sky_oqvgu")
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.4
+reflected_light_source = 2
+glow_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.01
+volumetric_fog_emission = Color(0.629675, 0.629675, 0.629675, 1)
+volumetric_fog_detail_spread = 6.0
+volumetric_fog_ambient_inject = 1.0
+volumetric_fog_sky_affect = 0.4
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_bjne5")
