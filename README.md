@@ -1,4 +1,4 @@
-# honours-project
+Project used for my honours study to compare player engagement in procedurally generated content with parameter values randomized within narrower and wider ranges
  
 Using [Tree3D by JekSun97](https://github.com/JekSun97/gdTree3D)
 
