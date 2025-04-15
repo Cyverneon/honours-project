@@ -3,3 +3,5 @@ Project used for my honours study to compare player engagement in procedurally g
 Using [Tree3D by JekSun97](https://github.com/JekSun97/gdTree3D)
 
 And [Quality godot first person controller by Colormatic Studios](https://github.com/ColormaticStudios/quality-godot-first-person-2)
+
+Materials used for terrain and the trees sourced from https://ambientcg.com
